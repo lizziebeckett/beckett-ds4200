@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data and Methodology</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <dt> 
+        Data
+    </dt>
+    <div class = "main">
+        <p>
+            A sentiment analysis will be conducted on articles that mention the labor market collected from 2018 to 2024 from a number of major news outlets, including Reuters, CBS, CNBC, NBC, CNN, Fox, New York Times, USA Today, Associated Press, and The Guardian. Data from the Bureau of Labor Statistics (BLS) will also be employed to determine actual labor market behavior.
+        </p>
+    </div>
+    <dt> 
+        Calculated Variables
+    </dt>
+    <div class="main">
+        <p>
+            Actual labor market health will be represented as a Beveridge-style ratio of unemployment to job openings. 
+            <br></br>
+            An accuracy index will be used to determine how well the average sentiments of a given quarter t reflected actual labor market health:
+            <br>
+            <math>
+                <msub> 
+                    <mn>accuracy</mn>
+                    <mn>t</mn>
+                </msub>
+                <mo>= (1 - </mo>
+                <msub>
+                    <mn>(labor market health</mn>
+                    <mn>t</mn>
+                </msub>
+                <mo> - </mo>
+                <msub>
+                    <mn>news sentiment</mn>
+                    <mn>t</mn>
+                </msub>
+                <mo>)) * 10</mo>
+            </math>
+            <br>
+            An accuracy index closer to 10 represents labor market reporting for period t that is highly reflective of actual labor market health. 
+            <br></br>
+            Market competition is measured by the Herfindahl Hirschman Index:
+            <br>
+            <math>
+                <mn>competition</mn><mo>=</mo>
+                <mrow>
+                  <munderover>
+                    <mo>∑</mo>
+                    <mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow>
+                    <mrow><mn>n</mn></mrow>
+                  </munderover>
+                  <msubsup>
+                    <mn>S</mn>
+                    <mn>i</mn>
+                    <mn>2</mn>
+                  </msubsup>
+                </mrow>
+              </math>
+              <br></br>
+              There are various determinants of labor market health that may be correlated with reporting accuracy, such as existing jobseeker confidence (which may dictate a higher demand for labor market news and skew accuracy) and stock market performance.
+        </p>
+    </div>
+    <dt> 
+        Tentative Model
+    </dt>
+    <div class="main">
+        <p>
+            To isolate the effect of reporting accuracy on labor market health, an instrumental variable will be used. The first form regression will be as follows:
+            <br></br>
+            <math>
+                <mn>accuracy = </mn>
+                <msub>
+                    <mn> γ</mn><mn>0</mn>
+                </msub>
+                <mo>+</mo>
+                <msub>
+                    <mn>γ</mn><mn>1</mn>
+                </msub>
+                <mn>(competition) + </mn>
+                <msub>
+                    <mn>γ</mn><mn>2</mn>
+                </msub>
+                <mn>(literacy)</mn>
+            </math>
+        <br></br>
+        Where competition is defined as it is above, and literacy is determined by the overall economic knowledge of the journalists represented in the data set for a given quarter. 
+        <br></br>
+        The final regression:
+        <br></br>
+        <math>
+            <mfrac>
+                <mn>unemployment</mn><mn>job vacancies</mn>
+            </mfrac>
+            <mo>=</mo>
+            <msub>
+                <mn>β</mn><mn>0</mn>
+            </msub>
+            <mo>+</mo>
+            <msub>
+                <mn>β</mn><mn>1</mn>
+            </msub>
+            <mn>(accuracy) + controls</mn>
+        </math>
+        <br></br>
+        The importance of accurate labor market reporting will be determined by
+        <math>
+            <msub>
+                <mn>β</mn><mn>1</mn>
+            </msub>
+            <mn>.</mn>
+        </math>
+        A higher value for 
+        <math>
+            <msub>
+                <mn>β</mn><mn>1</mn>
+            </msub>
+        </math>
+        will reflect a greater impact of the accuracy of labor market reporting on labor market health.
+        </p>
+    </div>
+    <br>
+    <a class="A", href="index.html">Go Back</a>
+    <br></br>
+</body>

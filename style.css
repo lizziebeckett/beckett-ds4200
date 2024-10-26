@@ -1,0 +1,72 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    color:rgb(89, 188, 100);
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+h2 {
+    color: white;
+    font-size: 25px;
+}
+
+h3 {
+    color: black;
+}
+
+h5 {
+    color: gray;
+    font-size: 15px;
+}
+
+p {
+    margin: 0 auto;
+}
+
+img {
+    width: 200px;
+}
+
+.A {
+    color: white;
+    padding: 5px;
+    margin: 10px;
+    border: 5px outset black;
+    background-color: gray;
+}
+
+ul {
+    list-style: inside;
+}
+
+math {
+    font-style: italic;
+}
+
+.main {
+    color: black;
+    background-color: lavenderblush;
+    width: 1200px;
+    padding: 20px 20px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.APA {
+    text-indent: 40px hanging;
+    text-align: left
+}
+
+dt {
+    background-color: gray;
+    font-family: cursive;
+    color: white;
+    padding: 10px;
+    top: 0;
+    left: 0;
+    margin: 1em 0;
+}
